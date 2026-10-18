@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_shared_surface_treatments",
+  "info": {
+    "displayName": "surface-treatment"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

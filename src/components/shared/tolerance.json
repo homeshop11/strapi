@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_shared_tolerances",
+  "info": {
+    "displayName": "tolerance"
+  },
+  "options": {},
+  "attributes": {
+    "process": {
+      "type": "string",
+      "required": true
+    },
+    "tolerance": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,77 @@
+{
+  "kind": "collectionType",
+  "collectionName": "product_lines",
+  "info": {
+    "singularName": "product-line",
+    "pluralName": "product-lines",
+    "displayName": "Product Line"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "slug": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "summary": {
+      "type": "text",
+      "required": true
+    },
+    "description": {
+      "type": "blocks",
+      "required": true
+    },
+    "materials": {
+      "type": "component",
+      "component": "shared.material",
+      "repeatable": true,
+      "required": true
+    },
+    "specifications": {
+      "type": "component",
+      "component": "shared.specification",
+      "repeatable": true,
+      "required": true
+    },
+    "tolerances": {
+      "type": "component",
+      "component": "shared.tolerance",
+      "repeatable": true,
+      "required": false
+    },
+    "surfaceTreatments": {
+      "type": "component",
+      "component": "shared.surface-treatment",
+      "repeatable": true
+    },
+    "applications": {
+      "type": "component",
+      "component": "shared.application",
+      "repeatable": true
+    },
+    "leadTime": {
+      "type": "string"
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "sortOrder": {
+      "type": "integer"
+    }
+  }
+}

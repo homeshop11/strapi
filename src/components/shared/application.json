@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_shared_applications",
+  "info": {
+    "displayName": "application"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_shared_localized_text_blocks",
+  "info": {
+    "displayName": "localized-text-block"
+  },
+  "options": {},
+  "attributes": {
+    "language": {
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "en",
+        "de",
+        "fr",
+        "es",
+        "ja"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "body": {
+      "type": "richtext",
+      "required": true
+    }
+  },
+  "config": {}
+}
