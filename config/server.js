@@ -4,6 +4,9 @@ module.exports = ({ env }) => ({
   app: {
     keys: env.array('APP_KEYS'),
   },
+  logger: {
+    level: env('NODE_ENV') === 'production' ? 'info' : 'debug',
+  },
   webhooks: {
     populateRelations: env.bool('WEBHOOKS_POPULATE_RELATIONS', false),
   },
